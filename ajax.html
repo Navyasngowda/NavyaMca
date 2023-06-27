@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ajax web page</title>
+</head>
+
+<body>
+    <div id="d1">
+        <h2> Ajax changes this button</h2>
+        <button type="button" onclick="loadDoc()">Fetch Data</button>
+    </div>
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest;
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("d1").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajax.txt", true);
+            xhttp.send();
+        }
+
+    </script>
+</body>
+
+
+</html>

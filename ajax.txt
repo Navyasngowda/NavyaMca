@@ -1,0 +1,5 @@
+<h1>AJAX<h1>
+
+<h5>Introduction</h5>
+<p>Ajax enables a web application user to interact with a web page without the interruption of constant web page reloading.
+</p>
